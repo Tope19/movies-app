@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Contact Us
+{% endblock %}
+
+{% block body %}
+    {# {% if title %}
+        <h1>{{ dump(title) }}</h1>
+        {% else %}
+        <p>No title was found in the context!</p>
+    {% endif %} #}
+
+    {% for movie in movies %}
+        <li>{{ movie }} </li>
+    {% endfor %}
+
+    {# Global variables #}
+    <p> {{ _self }} </p>
+    <p> {{ _charset }} </p>
+{% endblock %}
+
